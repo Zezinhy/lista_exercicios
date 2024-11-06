@@ -1,0 +1,67 @@
+let numeros = [10];
+
+numeros.unshift(5);
+
+numeros.shift();
+
+numeros.push (15);
+
+numeros.pop();
+
+numeros.push(20,30,40);
+
+numeros.splice(1,1);
+
+let subNumeros = [10,30];
+
+numeros.sort();
+
+numeros.reverse();
+
+numeros.push(50);
+
+//somar todos os numeros 
+
+
+numeros.push(60,70,80);
+
+numeros.splice(1,1,35);
+
+let indice = numeros.indexOf(30);
+
+let contemCinquenta = numeros.includes(50);
+
+
+let numeros_pares = [];
+for (let item of numeros) {
+  if (item % 2 === 0) {  
+    numeros_pares.push(item);
+  }
+}
+
+let numeros_dobro = [];
+for (let item2 of numeros) {
+  let dobro = item2 * 2;  
+    numeros_dobro.push(dobro);
+}
+
+//somar todos os numeros
+
+numeros.unshift(90);
+
+numeros.splice(6,2);
+
+let numeros_reverse = [90, 40, 35, 10, 50, 60];
+for (let item3 of numeros) {
+ numeros_reverse.reverse ();
+}
+
+
+
+console.log("vetor numeros",numeros);
+console.log("vetor subNumeros",subNumeros);
+console.log("o indice do numero 30 é",indice);
+console.log(contemCinquenta);
+console.log("numeros pares", numeros_pares);
+console.log(numeros_dobro);
+console.log(numeros_reverse);
